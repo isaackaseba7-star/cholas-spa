@@ -31,9 +31,7 @@ const features = [
 
 const galleryImages = [
   "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1608248593842-88baf9d15024?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1554057009-ceeee634fd65?auto=format&fit=crop&q=80&w=800"
+  "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800"
 ];
 
 export function WhyUs() {
@@ -107,7 +105,7 @@ export function WhyUs() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + (idx * 0.1), duration: 0.6 }}
-                  className={`rounded-2xl overflow-hidden shadow-2xl relative group ${idx === 0 || idx === 3 ? 'h-48 md:h-64' : 'h-64 md:h-80'} ${idx === 1 ? 'mt-12 md:mt-16' : ''}`}
+                  className={`rounded-2xl overflow-hidden shadow-2xl relative group h-64 md:h-[450px] ${idx === 1 ? 'mt-12 md:mt-24' : ''}`}
                 >
                   <div className="absolute inset-0 bg-emerald-900/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                   <img src={img} alt={`Spa Image ${idx+1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" />
